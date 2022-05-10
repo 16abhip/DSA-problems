@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 template <typename T>
 	class BinaryTreeNode {
     	public : 
@@ -10,4 +13,10 @@ template <typename T>
         	left = NULL;
         	right = NULL;
     	}
+
+		~BinaryTreeNode()
+		{
+			delete left;
+			delete right;
+		}
 	};
